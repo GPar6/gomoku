@@ -1,11 +1,65 @@
 body {
-    background-color: #d400ff;
-    /* 浅灰色背景 */
-    text-align: center;
-    /* 文字居中 */
+    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
 }
 
 h1 {
-    color: rgb(134, 0, 216);
-    /* 标题变深蓝色 */
+    color: #333;
+    margin-bottom: 5px;
 }
+
+.controls {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d93a49;
+    min-width: 120px;
+    text-align: center;
+}
+
+canvas {
+    background-color: #eebb77;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: crosshair;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button.secondary {
+    background-color: #6c757d;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* 模式切换开关 */
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+

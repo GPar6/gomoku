@@ -1,0 +1,11 @@
+body {
+    background-color: #d400ff;
+    /* 浅灰色背景 */
+    text-align: center;
+    /* 文字居中 */
+}
+
+h1 {
+    color: rgb(134, 0, 216);
+    /* 标题变深蓝色 */
+}
